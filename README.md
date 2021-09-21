@@ -1,8 +1,9 @@
-# Helicon SDK
+# Helicon JavaScript Sample App
 
 Helicon sdk is a javascript library that allows web clients to interact with the Helicon streams api server.
-In this repository you will find some examples on how to use it.
 
+
+In this repository you will find some examples on how to use it.
 
 ## Usage
 
@@ -25,11 +26,3 @@ helicon.publish('my_stream', record)
     (errorMessage) => console.error(errorMessage)
 );
 ```
-## How to run the Example
-A complete example of the usage of this library can be found in the `example/` directory.
-
-To run it, follow those steps:
-
-1. run `yarn install` and then `yarn build` in the root directory of this repository
-
-2. run `yarn install` and then `yarn start` in the `example` directory

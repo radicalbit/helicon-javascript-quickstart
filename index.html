@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://storage.googleapis.com/rb-helicon/SDK/helicon-sdk-1.0.0.umd"></script>
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <form id="form">
+      <h1>Helicon JavaScript Sample App</h1>
+      <nav>
+        <ul>
+          <li>
+            <span onclick="changeUrl('/')" style="cursor: pointer">Home</span>
+          </li>
+          <li>
+            <span
+              onclick="changeUrl('pageWithUtmTerms/?utm_source=summer-mailer&utm_medium=wrong&utm_campaign=summer-sale&utm_term=termineprova1&utm_term=termineprova2&utm_content=content&utm_medium=right')"
+              style="cursor: pointer"
+            >
+              UtmTerms test</span
+            >
+          </li>
+        </ul>
+      </nav>
+      <div>
+          <label for="tenant">Tenant</label><br />
+        <input type="text" id="tenant" name="tenant" value="" />
+      </div>
+      <div>
+          <label for="tenant">clientId</label><br />
+        <input
+          type="text"
+          id="clientId"
+          name="client Id"
+          value=""
+        />
+      </div>
+      <div>
+          <label for="tenant">Stream name</label><br />
+        <input type="text" id="displayName" name="displayName" value="" />
+      </div>
+      <div>
+          <label for="payload">Record</label><br />
+        <textarea id="payload" rows="7" cols="30" name="payload">
+{
+  "value1": "foo",
+  "value2": 2
+}</textarea
+        >
+      </div>
+      <div>
+        <button type="button" onclick="onSubmit()">Submit</button>
+      </div>
+      <br />
+      <span id="result"></span>
+    </form>
+  </body>
+</html>
