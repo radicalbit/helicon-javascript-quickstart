@@ -1,4 +1,4 @@
-# Helicon SDK
+# Helicon JavaScript Sample App
 
 Helicon sdk is a javascript library that allows web clients to interact with the Helicon streams api server.
 

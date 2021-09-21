@@ -1,7 +1,7 @@
 {
-  "name": "helicon-sdk-quickstart",
+  "name": "helicon-javascript-quickstart",
   "version": "1.0.0",
-  "repository": "https://github.com/radicalbit/helicon-sdk-quickstart",
+  "repository": "https://github.com/radicalbit/helicon-javascript-quickstart",
   "author": "radicalbit",
   "license": "MIT"
 }
