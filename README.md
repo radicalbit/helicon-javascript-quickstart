@@ -30,7 +30,7 @@ helicon.publish('my_stream', record)
 ## How to Run the app
 
 Download the repo and open `index.html` in your favourite browser.
-Alternatively, you can find a live functioning example [here](https://stackblitz.com/github/radicalbit/helicon-sdk-quickstart/)
+Alternatively, you can find a live functioning example [here](https://stackblitz.com/edit/helicon-javascript-quickstart)
 
 ## Support
 We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.io).
