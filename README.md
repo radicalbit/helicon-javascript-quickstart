@@ -1,13 +1,13 @@
 # Helicon JavaScript Sample App
+This repository contains the files required to run the Helicon JavaScript Quickstart.
 
-Helicon sdk is a javascript library that allows web clients to interact with the Helicon streams api server.
+Helicon is a simple, scalable, robust, code-free and generic platform to enable and productise the next generation of "online modified", real-time event stream ML/AI models.
 
+## Sample App
 
-In this repository you will find some examples on how to use it.
+This project is composed of a `index.html` and a `script.js` file that illustrates how to use the _Helicon Javascript SDK_.
 
-## Usage
-
-Usage of the library is pretty straightforward:
+The javascript usage of the sdk can be summarized in the lines below:
 
 ```javascript
 // Create a new Helicon SDK istance
@@ -26,3 +26,11 @@ helicon.publish('my_stream', record)
     (errorMessage) => console.error(errorMessage)
 );
 ```
+
+## How to Run the app
+
+Download the repo and open `index.html` in your favourite browser.
+Alternatively, you can find a live functioning example [here](https://stackblitz.com/github/radicalbit/helicon-sdk-quickstart/)
+
+## Support
+We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.io).
