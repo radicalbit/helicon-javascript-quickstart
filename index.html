@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="https://storage.googleapis.com/rb-helicon/SDK/helicon-sdk-3.0.0.umd"></script>
+    <script src="https://storage.googleapis.com/rb-helicon/SDK/helicon-sdk-4.0.0.umd"></script>
     <script src="./script.js"></script>
   </head>
 
@@ -25,30 +25,28 @@
         </ul>
       </nav>
       <div>
-          <label for="tenant">Tenant</label><br />
+        <label htmlFor="hostURL">host URL</label><br/>
+        <input type="text" id="hostURL" name="hostURL" value="" />
+      </div>
+      <div>
+        <label for="tenant">Tenant</label><br />
         <input type="text" id="tenant" name="tenant" value="" />
       </div>
       <div>
-          <label for="tenant">clientId</label><br />
-        <input
-          type="text"
-          id="clientId"
-          name="client Id"
-          value=""
-        />
+        <label for="tenant">clientId</label><br />
+        <input type="text" id="clientId" name="client Id" value="" />
       </div>
       <div>
-          <label for="tenant">Stream name</label><br />
+        <label for="tenant">Stream name</label><br />
         <input type="text" id="displayName" name="displayName" value="" />
       </div>
       <div>
-          <label for="payload">Record</label><br />
+        <label for="payload">Record</label><br />
         <textarea id="payload" rows="7" cols="30" name="payload">
 {
   "value1": "foo",
   "value2": 2
-}</textarea
-        >
+}</textarea>
       </div>
       <div>
         <button type="button" onclick="onSubmit()">Submit</button>

@@ -1,4 +1,5 @@
 let resultSpan;
+let hostURL;
 let tenant;
 let clientId;
 let displayName;
@@ -6,6 +7,7 @@ let payload;
 
 window.onload = () => {
   resultSpan = document.getElementById('result');
+  hostURL = document.getElementById('hostURL');
   tenant = document.getElementById('tenant');
   clientId = document.getElementById('clientId');
   displayName = document.getElementById('displayName');
@@ -23,20 +25,23 @@ function onSubmit() {
   }
 
   // Create a new Helicon SDK istance
-  const helicon = new Helicon(tenant.value, clientId.value, { trace: true });
+  const helicon = new Helicon.HeliconWriteClient(hostURL.value, clientId.value, tenant.value, { trace: true });
 
   try {
     // get the payload value
     const record = JSON.parse(payload.value);
 
     // and send it to the stream
-    helicon.publish(displayName.value, record).then(
+    helicon.write(displayName.value, record).then(
       () => { 
       resultSpan.append('Publish completed!');
       resultSpan.style.color = "green";
     
     },
-      (errorMessage) => resultSpan.append(errorMessage)
+      (errorMessage) => {
+        resultSpan.append(errorMessage);
+        resultSpan.style.color = "red";
+      }
     );
   } catch (error) {
     resultSpan.append('Record malformed, please enter a valid JSON');
