@@ -1,5 +1,5 @@
 let resultSpan;
-let heliconHost;
+let host;
 let tenant;
 let clientId;
 let displayName;
@@ -7,10 +7,12 @@ let payload;
 
 window.onload = () => {
   resultSpan = document.getElementById('result');
-  heliconHost = document.getElementById('heliconHost');
+  host = document.getElementById('host');
   tenant = document.getElementById('tenant');
   clientId = document.getElementById('clientId');
   displayName = document.getElementById('displayName');
+  port = document.getElementById('port');
+  protocol = document.getElementById('protocol');
   payload = document.getElementById('payload');
 }
 
@@ -25,7 +27,7 @@ function onSubmit() {
   }
 
   // Create a new Helicon SDK istance
-  const helicon = new Helicon.HeliconWriteClient(heliconHost.value, clientId.value, tenant.value, { trace: true });
+  const helicon = new Helicon.HeliconWriteClient(host.value, clientId.value, tenant.value, protocol.value, port.value, { trace: true });
 
   try {
     // get the payload value

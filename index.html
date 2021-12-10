@@ -25,21 +25,38 @@
         </ul>
       </nav>
       <div>
-        <label htmlFor="heliconHost">helicon host</label><br/>
-        <input type="text" id="heliconHost" name="heliconHost" value="" />
+        <label htmlFor="host">host</label><br/>
+        <input type="text" id="host" name="host" value="" />
       </div>
+
+      <div>
+        <label htmlFor="port">port</label><br/>
+        <input type="number" id="port" name="port" value="443" />
+      </div>
+
+      <div>
+        <label htmlFor="protocol">protocol</label><br/>
+        <select type="number" id="protocol" name="protocol">
+          <option value="https">https</option>
+          <option value="http">http</option>
+        </select>
+      </div>
+
       <div>
         <label for="tenant">Tenant</label><br />
         <input type="text" id="tenant" name="tenant" value="" />
       </div>
+
       <div>
-        <label for="tenant">clientId</label><br />
+        <label for="clientId">clientId</label><br />
         <input type="text" id="clientId" name="client Id" value="" />
       </div>
+
       <div>
-        <label for="tenant">Stream name</label><br />
+        <label for="displayName">Stream name</label><br />
         <input type="text" id="displayName" name="displayName" value="" />
       </div>
+
       <div>
         <label for="payload">Record</label><br />
         <textarea id="payload" rows="7" cols="30" name="payload">
@@ -56,3 +73,4 @@
     </form>
   </body>
 </html>
+}
