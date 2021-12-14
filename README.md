@@ -11,7 +11,7 @@ The javascript usage of the sdk can be summarized in the lines below:
 
 ```javascript
 // Create a new Helicon SDK istance
-const heliconWriteClient = new Helicon.HeliconWriteClient('hostAddress', 'clientId', 'tenant',);
+const heliconWriteClient = new Helicon.HeliconWriteClient('hostAddress', 'clientId', 'tenant');
 
 // add some payload...
 const record = {
