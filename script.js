@@ -27,14 +27,14 @@ function onSubmit() {
   }
 
   // Create a new Helicon SDK istance
-  const helicon = new Helicon.HeliconWriteClient(host.value, clientId.value, tenant.value, protocol.value, port.value, { trace: true });
+  const heliconWriteClient = new Helicon.HeliconWriteClient(host.value, clientId.value, tenant.value, protocol.value, port.value, { trace: true });
 
   try {
     // get the payload value
     const record = JSON.parse(payload.value);
 
     // and send it to the stream
-    helicon.write(displayName.value, record).then(
+    heliconWriteClient.write(displayName.value, record).then(
       () => { 
       resultSpan.append('Publish completed!');
       resultSpan.style.color = "green";
