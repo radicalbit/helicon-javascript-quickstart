@@ -11,7 +11,7 @@ The javascript usage of the sdk can be summarized in the lines below:
 
 ```javascript
 // Create a new Helicon SDK istance
-const helicon = new Helicon('tenant', 'clientId');
+const heliconWriteClient = new Helicon.HeliconWriteClient('hostAddress', 'clientId', 'tenant',);
 
 // add some payload...
 const record = {
@@ -20,7 +20,7 @@ const record = {
 };
 
 // and send it to the stream
-helicon.publish('my_stream', record)
+heliconWriteClient.write('my_stream', record)
   .then(
     () => console.log('payload published!'),
     (errorMessage) => console.error(errorMessage)
