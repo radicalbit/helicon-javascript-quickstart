@@ -1,7 +1,7 @@
 # Helicon JavaScript Sample App
-This repository contains the files required to run the Helicon JavaScript Quickstart.
+This repository contains the files required to run the Radicalbit Platform JavaScript Quickstart.
 
-Helicon is a simple, scalable, robust, code-free and generic platform to enable and productise the next generation of "online modified", real-time event stream ML/AI models.
+The Radicalbit Platform is a simple, scalable, robust, code-free and generic platform to enable and productise the next generation of "online modified", real-time event stream ML/AI models.
 
 ## Sample App
 
