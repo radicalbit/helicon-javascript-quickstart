@@ -33,4 +33,4 @@ Download the repo and open `index.html` in your favourite browser.
 Alternatively, you can find a live functioning example [here](https://stackblitz.com/edit/helicon-javascript-quickstart-z8feqv?file=index.html)
 
 ## Support
-We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.io).
+We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.ai).
